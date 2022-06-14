@@ -2,7 +2,6 @@
 using MCM.Abstractions.Settings.Base.Global;
 using Newtonsoft.Json;
 using SandBox.ViewModelCollection.Nameplate;
-using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using TaleWorlds.GauntletUI;

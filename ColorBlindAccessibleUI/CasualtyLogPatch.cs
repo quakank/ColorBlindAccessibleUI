@@ -1,11 +1,11 @@
 ﻿using HarmonyLib;
 using MCM.Abstractions.Settings.Base.Global;
 using TaleWorlds.Library;
-using TaleWorlds.MountAndBlade.ViewModelCollection.HUD.KillFeed;
+using TaleWorlds.MountAndBlade.ViewModelCollection.HUD.KillFeed.General;
 
 namespace ColorBlindAccessibleUI
 {
-    [HarmonyPatch(typeof(SPMissionKillNotificationItemVM), "friendlyColor", MethodType.Getter)]
+    [HarmonyPatch(typeof(SPGeneralKillNotificationItemVM), "friendlyColor", MethodType.Getter)]
     internal class FriendlyCasualtyLogPatch
     {
         private static bool Prefix(ref Color __result)
@@ -15,7 +15,7 @@ namespace ColorBlindAccessibleUI
         }
     }
 
-    [HarmonyPatch(typeof(SPMissionKillNotificationItemVM), "enemyColor", MethodType.Getter)]
+    [HarmonyPatch(typeof(SPGeneralKillNotificationItemVM), "enemyColor", MethodType.Getter)]
     internal class EnemyCasualtyLogPatch
     {
         private static bool Prefix(ref Color __result)

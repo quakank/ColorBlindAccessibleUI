@@ -11,6 +11,7 @@
     <DependedModule Id="StoryMode" DependentVersion="e1.8.0"/>
 	<DependedModule Id="CustomBattle" DependentVersion="e1.8.0"/>
 	<DependedModule Id="Bannerlord.MBOptionScreen" DependentVersion="v4.7.1"/>
+    <DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.2.1.79"/>
   </DependedModules>
   <SubModules>
     <SubModule>

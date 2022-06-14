@@ -1,21 +1,22 @@
 ﻿<Module>
-  <Name value="AccessibleColorUI"/>
-  <Id value="AccessibleColorUI"/>
+  <Name value="ColorBlindAccessibleUI"/>
+  <Id value="ColorBlindAccessibleUI"/>
   <Version value="v1.0.0"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
   <DependedModules>
-    <DependedModule Id="Native"/>
-    <DependedModule Id="SandBoxCore"/>
-    <DependedModule Id="Sandbox"/>
-    <DependedModule Id="StoryMode" />
-	<DependedModule Id="CustomBattle"/>
+    <DependedModule Id="Native" DependentVersion="e1.6.4"/>
+    <DependedModule Id="SandBoxCore" DependentVersion="e1.6.4"/>
+    <DependedModule Id="Sandbox" DependentVersion="e1.6.4"/>
+    <DependedModule Id="StoryMode" DependentVersion="e1.6.4"/>
+	<DependedModule Id="CustomBattle" DependentVersion="e1.6.4"/>
+	<DependedModule Id="Bannerlord.MBOptionScreen" DependentVersion="v4.3.14"/>
   </DependedModules>
   <SubModules>
     <SubModule>
-      <Name value="AccessibleColorUI"/>
-      <DLLName value="AccessibleColorUI.dll"/>
-      <SubModuleClassType value="AccessibleColorUI.AccessibleColorUISubModule"/>
+      <Name value="ColorBlindAccessibleUI"/>
+      <DLLName value="ColorBlindAccessibleUI.dll"/>
+      <SubModuleClassType value="ColorBlindAccessibleUI.ColorBlindAccessibleUI"/>
       <Tags>
         <Tag key="DedicatedServerType" value="none" />
         <Tag key="IsNoRenderModeElement" value="false" />

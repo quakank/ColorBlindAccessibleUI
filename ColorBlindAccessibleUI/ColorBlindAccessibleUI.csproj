@@ -75,40 +75,12 @@
       <HintPath>%(Identity)</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MBOptionScreen">
-      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MBOptionScreen.dll</HintPath>
+    <Reference Include="MCMv5">
+      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCMv5.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MBOptionScreen.v2.0.10">
-      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MBOptionScreen.v2.0.10.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="MCMv4">
-      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCMv4.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="MCMv4.Adapter.MBO">
-      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCMv4.Adapter.MBO.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="MCMv4.Adapter.MCMv3">
-      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCMv4.Adapter.MCMv3.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="MCMv4.Adapter.ModLib">
-      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCMv4.Adapter.ModLib.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="MCMv4.UI">
-      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCMv4.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ModLib">
-      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\ModLib.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ModLib.Definitions">
-      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\ModLib.Definitions.dll</HintPath>
+    <Reference Include="MCMv5.UI">
+      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCMv5.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
@@ -118,6 +90,9 @@
     <Reference Include="SandBox.ViewModelCollection">
       <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SandBox\bin\Win64_Shipping_Client\SandBox.ViewModelCollection.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.CampaignSystem">
+      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.CampaignSystem.dll</HintPath>
     </Reference>
     <Reference Include="TaleWorlds.CampaignSystem.ViewModelCollection">
       <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.CampaignSystem.ViewModelCollection.dll</HintPath>
@@ -130,6 +105,9 @@
     <Reference Include="TaleWorlds.Library">
       <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.Library.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Localization">
+      <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.Localization.dll</HintPath>
     </Reference>
     <Reference Include="TaleWorlds.MountAndBlade">
       <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.dll</HintPath>
@@ -154,6 +132,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettlementNameplateColorPatch.cs" />
     <Compile Include="UIColorsPatch.cs" />
+    <Content Include="Readme.txt" />
     <Content Include="SubModule.xml" />
   </ItemGroup>
   <!-- Post-Build -->

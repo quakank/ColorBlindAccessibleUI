@@ -1,16 +1,17 @@
 ﻿<Module>
   <Name value="ColorBlindAccessibleUI"/>
   <Id value="ColorBlindAccessibleUI"/>
-  <Version value="v1.0.0"/>
+  <Version value="v1.1.0"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
   <DependedModules>
-    <DependedModule Id="Native" DependentVersion="e1.6.4"/>
-    <DependedModule Id="SandBoxCore" DependentVersion="e1.6.4"/>
-    <DependedModule Id="Sandbox" DependentVersion="e1.6.4"/>
-    <DependedModule Id="StoryMode" DependentVersion="e1.6.4"/>
-	<DependedModule Id="CustomBattle" DependentVersion="e1.6.4"/>
-	<DependedModule Id="Bannerlord.MBOptionScreen" DependentVersion="v4.3.14"/>
+    <DependedModule Id="Native" DependentVersion="e1.8.0"/>
+    <DependedModule Id="SandBoxCore" DependentVersion="e1.8.0"/>
+    <DependedModule Id="Sandbox" DependentVersion="e1.8.0"/>
+    <DependedModule Id="StoryMode" DependentVersion="e1.8.0"/>
+	<DependedModule Id="CustomBattle" DependentVersion="e1.8.0"/>
+	<DependedModule Id="Bannerlord.MBOptionScreen" DependentVersion="v4.7.1"/>
+    <DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.2.1.79"/>
   </DependedModules>
   <SubModules>
     <SubModule>

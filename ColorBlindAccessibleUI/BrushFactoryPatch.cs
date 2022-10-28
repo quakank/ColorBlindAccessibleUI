@@ -1,5 +1,5 @@
 ﻿using HarmonyLib;
-using MCM.Abstractions.Settings.Base.Global;
+using MCM.Abstractions.Base.Global;
 using TaleWorlds.GauntletUI;
 using TaleWorlds.Library;
 
@@ -18,24 +18,11 @@ namespace ColorBlindAccessibleUI
                     __result.RemoveStyle("Good");
                     __result.RemoveStyle("VeryBad");
                     __result.RemoveStyle("Bad");
+                    var tempDefaultStyle = __result.GetStyle("Default");
                     __result.RemoveStyle("Default");
-                    var veryGoodStyle = new Style(__result.Layers);
-                    veryGoodStyle.Name = "VeryGood";
-                    veryGoodStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceVeryGood.SelectedValue.Color;
-                    __result.AddStyle(veryGoodStyle);
-                    var goodStyle = new Style(__result.Layers);
-                    goodStyle.Name = "Good";
-                    goodStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceGood.SelectedValue.Color;
-                    __result.AddStyle(goodStyle);
-                    var veryBadStyle = new Style(__result.Layers);
-                    veryBadStyle.Name = "VeryBad";
-                    veryBadStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceVeryBad.SelectedValue.Color;
-                    __result.AddStyle(veryBadStyle);
-                    var badStyle = new Style(__result.Layers);
-                    badStyle.Name = "Bad";
-                    badStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceBad.SelectedValue.Color;
-                    __result.AddStyle(badStyle);
+
                     var defaultStyle = new Style(__result.Layers);
+                    defaultStyle.DefaultStyle = tempDefaultStyle;
                     defaultStyle.Name = "Default";
                     defaultStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceNeutral.SelectedValue.Color;
                     defaultStyle.TextGlowColor = Color.ConvertStringToColor("#FF0000FF");
@@ -44,8 +31,32 @@ namespace ColorBlindAccessibleUI
                     defaultStyle.TextOutlineAmount = 0;
                     defaultStyle.TextGlowRadius = 0;
                     defaultStyle.FontSize = 18;
-
                     __result.AddStyle(defaultStyle);
+
+                    var veryGoodStyle = new Style(__result.Layers);
+                    veryGoodStyle.DefaultStyle = defaultStyle;
+                    veryGoodStyle.Name = "VeryGood";
+                    veryGoodStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceVeryGood.SelectedValue.Color;
+                    __result.AddStyle(veryGoodStyle);
+
+                    var goodStyle = new Style(__result.Layers);
+                    goodStyle.DefaultStyle = defaultStyle;
+                    goodStyle.Name = "Good";
+                    goodStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceGood.SelectedValue.Color;
+                    __result.AddStyle(goodStyle);
+
+                    var veryBadStyle = new Style(__result.Layers);
+                    veryBadStyle.DefaultStyle = defaultStyle;
+                    veryBadStyle.Name = "VeryBad";
+                    veryBadStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceVeryBad.SelectedValue.Color;
+                    __result.AddStyle(veryBadStyle);
+
+                    var badStyle = new Style(__result.Layers);
+                    badStyle.DefaultStyle = defaultStyle;
+                    badStyle.Name = "Bad";
+                    badStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceBad.SelectedValue.Color;
+                    __result.AddStyle(badStyle);
+                    
                     var cloneBrush = new Brush();
                     cloneBrush.FillFrom(__result);
                     ColorBlindAccessibleUI.TradePriceBrush = cloneBrush;

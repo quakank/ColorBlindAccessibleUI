@@ -1,5 +1,5 @@
 ﻿using HarmonyLib;
-using MCM.Abstractions.Settings.Base.Global;
+using MCM.Abstractions.Base.Global;
 using TaleWorlds.GauntletUI;
 using TaleWorlds.Library;
 

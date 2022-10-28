@@ -1,0 +1,23 @@
+<Tasks>
+    <CreateItem/>
+    <UpdateItem>
+        <ModuleFolder Value="G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\ColorBlindAccessibleUI"/>
+        <!-- A direct path of your module -->
+        <ItemDescription Value="This mod provides configurable color options for a variety of UI elements in an effort to make the game more accessible to people with color vision deficiencies. Offers 11 different color choices by default and also provides support for defining your own custom colors. Color options are configurable via in game Mod Configuration Menu"/>
+        <!-- A description that will be displayed on Steam Workshop, can be edited via the Steam UI -->
+        <Tags> 
+            <!-- You can use the following tags: -->
+            <!-- Type: Graphical Enhancement, Map Pack, Partial Conversion, Sound, Total Conversion, Troops, UI, Utility, Weapons and Armour -->
+            <!-- Setting: Native, Antiquity, Dark Ages, Medieval, Musket Era, Modern, Sci-Fi, Fantasy, Oriental, Apocalypse, Other -->
+            <!-- Game Mode: Singleplayer, Multiplayer -->
+            <!-- Compatible Version: e1.9.0, v1.0.0,... The currently available versions can be found at the Steam Workshop "Browse by Tag" section -->
+            <Tag Value="UI" />
+            <Tag Value="Singleplayer" />
+            <Tag Value="v1.0.0" />
+        </Tags>
+        <Image Value="C:\Users\nbwol_000\Pictures\bcp\colorblind\colorblind.jpg"/>
+        <!-- Determines the featured image displayed on Steam Workshop, a direct path to it must be inserted here (the image should be smaller than 1 MB) -->
+        <Visibility Value="Public"/>
+        <!-- Determines visibility on Steam Workshop. Can be: Public, FriendsOnly, Private -->
+    </UpdateItem>
+</Tasks>

@@ -15,7 +15,6 @@ namespace ColorBlindAccessibleUI
                 if (ColorBlindAccessibleUI.TradePriceBrush == null)
                 {
                     var veryGoodStyle = new Style(__result.Layers);
-                    veryGoodStyle.DefaultStyle = defaultStyle;
                     veryGoodStyle.Name = "VeryGood";
                     veryGoodStyle.SetAsDefaultStyle();
                     veryGoodStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceVeryGood.SelectedValue.Color;
@@ -23,7 +22,6 @@ namespace ColorBlindAccessibleUI
                     __result.AddStyle(veryGoodStyle);
 
                     var goodStyle = new Style(__result.Layers);
-                    goodStyle.DefaultStyle = defaultStyle;
                     goodStyle.Name = "Good";
                     goodStyle.SetAsDefaultStyle();
                     goodStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceGood.SelectedValue.Color;
@@ -31,7 +29,6 @@ namespace ColorBlindAccessibleUI
                     __result.AddStyle(goodStyle);
 
                     var veryBadStyle = new Style(__result.Layers);
-                    veryBadStyle.DefaultStyle = defaultStyle;
                     veryBadStyle.Name = "VeryBad";
                     veryBadStyle.SetAsDefaultStyle();
                     veryBadStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceVeryBad.SelectedValue.Color;
@@ -39,7 +36,6 @@ namespace ColorBlindAccessibleUI
                     __result.AddStyle(veryBadStyle);
 
                     var badStyle = new Style(__result.Layers);
-                    badStyle.DefaultStyle = defaultStyle;
                     badStyle.Name = "Bad";
                     badStyle.SetAsDefaultStyle();
                     badStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceBad.SelectedValue.Color;

@@ -1,7 +1,7 @@
 ﻿using MCM.Abstractions.Attributes;
 using MCM.Abstractions.Attributes.v2;
-using MCM.Abstractions.Dropdown;
-using MCM.Abstractions.Settings.Base.Global;
+using MCM.Abstractions.Base.Global;
+using MCM.UI.Dropdown;
 using System.Runtime.CompilerServices;
 
 namespace ColorBlindAccessibleUI

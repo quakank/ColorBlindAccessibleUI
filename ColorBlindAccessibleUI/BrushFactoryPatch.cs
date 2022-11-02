@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using MCM.Abstractions.Base.Global;
-using System;
 using TaleWorlds.GauntletUI;
 using TaleWorlds.Library;
 
@@ -16,24 +15,31 @@ namespace ColorBlindAccessibleUI
                 if (ColorBlindAccessibleUI.TradePriceBrush == null)
                 {
                     var veryGoodStyle = new Style(__result.Layers);
+                    veryGoodStyle.DefaultStyle = defaultStyle;
                     veryGoodStyle.Name = "VeryGood";
                     veryGoodStyle.SetAsDefaultStyle();
                     veryGoodStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceVeryGood.SelectedValue.Color;
                     __result.RemoveStyle("VeryGood");
                     __result.AddStyle(veryGoodStyle);
+
                     var goodStyle = new Style(__result.Layers);
+                    goodStyle.DefaultStyle = defaultStyle;
                     goodStyle.Name = "Good";
                     goodStyle.SetAsDefaultStyle();
                     goodStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceGood.SelectedValue.Color;
                     __result.RemoveStyle("Good");
                     __result.AddStyle(goodStyle);
+
                     var veryBadStyle = new Style(__result.Layers);
+                    veryBadStyle.DefaultStyle = defaultStyle;
                     veryBadStyle.Name = "VeryBad";
                     veryBadStyle.SetAsDefaultStyle();
                     veryBadStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceVeryBad.SelectedValue.Color;
                     __result.RemoveStyle("VeryBad");
                     __result.AddStyle(veryBadStyle);
+
                     var badStyle = new Style(__result.Layers);
+                    badStyle.DefaultStyle = defaultStyle;
                     badStyle.Name = "Bad";
                     badStyle.SetAsDefaultStyle();
                     badStyle.FontColor = GlobalSettings<MCMSettings>.Instance.TradePriceBad.SelectedValue.Color;
@@ -50,7 +56,6 @@ namespace ColorBlindAccessibleUI
                     defaultStyle.TextOutlineAmount = 0;
                     defaultStyle.TextGlowRadius = 0;
                     defaultStyle.FontSize = 18;
-
                     __result.RemoveStyle("Default");
                     __result.AddStyle(defaultStyle);
 

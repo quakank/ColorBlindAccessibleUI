@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/BUTR/Bannerlord.XmlSchemas/master/SubModule.xsd" >
 	<Name value="ColorBlindAccessibleUI"/>
 	<Id value="ColorBlindAccessibleUI"/>
-	<Version value="v1.2.0"/>
+	<Version value="v1.2.1"/>
 	<ModuleType value="Community" />
 	<DefaultModule value="false" />
 	<SingleplayerModule value="true" />
@@ -12,12 +12,12 @@
 	<Official value="false" />
 	<Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/3475" />
 	<DependedModules>
-		<DependedModule Id="Native" DependentVersion="e1.0.0"/>
-		<DependedModule Id="SandBoxCore" DependentVersion="e1.0.0"/>
-		<DependedModule Id="Sandbox" DependentVersion="e1.0.0"/>
-		<DependedModule Id="StoryMode" DependentVersion="e1.0.0"/>
-		<DependedModule Id="CustomBattle" DependentVersion="e1.0.0"/>
-		<DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.2.2.139"/>
+		<DependedModule Id="Native" DependentVersion="v1.0.0"/>
+		<DependedModule Id="SandBoxCore" DependentVersion="v1.0.0"/>
+		<DependedModule Id="Sandbox" DependentVersion="v1.0.0"/>
+		<DependedModule Id="StoryMode" DependentVersion="v1.0.0"/>
+		<DependedModule Id="CustomBattle" DependentVersion="v1.0.0"/>
+		<DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.2.2.140"/>
 		<DependedModule Id="Bannerlord.MBOptionScreen" DependentVersion="v5.0.0"/>
 	</DependedModules>
 	<!-- Community Dependency Metadata -->
@@ -25,11 +25,11 @@
 	<DependedModuleMetadatas>
 		<DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="v2.2.2.139" />
 		<DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" version="v5.0.0"/>
-		<DependedModuleMetadata id="Native" order="LoadBeforeThis" version="e1.0.0.*" />
-		<DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="e1.0.0.*" />
-		<DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="e1.0.0.*" />
-		<DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="e1.0.0.*" />
-		<DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" version="e1.0.0.*" />
+		<DependedModuleMetadata id="Native" order="LoadBeforeThis" version="v1.0.0.*" />
+		<DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="v1.0.0.*" />
+		<DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="v1.0.0.*" />
+		<DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="v1.0.0.*" />
+		<DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" version="v1.0.0.*" />
 	</DependedModuleMetadatas>
 	<SubModules>
 		<SubModule>

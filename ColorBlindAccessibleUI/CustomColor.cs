@@ -17,6 +17,7 @@ namespace ColorBlindAccessibleUI
                 Color = this.ParseColorCode(value);
             }
         }
+        private static Color CustomBlack => new Color(0.01f, 0.01f, 0.01f, 1);
 
         public CustomColor(string name, Color color) => (Name, Color) = (name, color);
 
@@ -26,7 +27,7 @@ namespace ColorBlindAccessibleUI
 
         public static CustomColor[] ColorList = new CustomColor[]
         {
-            new CustomColor("Black", new Color(0.01f, 0.01f, 0.01f, 1)),
+            new CustomColor("Black", CustomBlack),
             new CustomColor("Blue", Colors.Blue),
             new CustomColor("Cyan", Colors.Cyan),
             new CustomColor("Gray", Colors.Gray),
@@ -76,7 +77,7 @@ namespace ColorBlindAccessibleUI
                 parsedColor = Colors.Gray;
 
             if (parsedColor == Color.Black)
-                parsedColor = new Color(0.01f, 0.01f, 0.01f, 1);
+                parsedColor = CustomBlack;
 
             return parsedColor;
         }

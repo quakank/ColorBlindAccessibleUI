@@ -1,4 +1,4 @@
-﻿COLOR BLIND ACCESSIBLE UI - version 1.2.0
+﻿COLOR BLIND ACCESSIBLE UI - version 1.3.0
 Built on Bannerlord 1.0.0 Main Release
 
 This mod provides configurable color options for a variety of UI elements.
@@ -8,8 +8,10 @@ Currently configurable UI Elements:
 - Settlement nameplates for Allied and Enemy settlements
 - Party and Army size numbers on the world map, Ally/Enemy
 - Various Positive/Negative indicators such as differences in stats on equipment in Trade/Inventory screen
+- Standard information messages (XP Gain, Daily Gold Change, etc)
+- Event notification messages (Prisoner taken/escaped, Army creation, Marriage, NPC Lost, etc)
 
-This mod comes packaged with 11 defined color options but provides the ability to define your own
+This mod comes packaged with 26 defined color options but provides the ability to define your own
 colors for use in the mod.
 
 

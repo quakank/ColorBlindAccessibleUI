@@ -21,6 +21,8 @@ namespace ColorBlindAccessibleUI
 
         public CustomColor(string name, Color color) => (Name, Color) = (name, color);
 
+        public CustomColor(string name, uint color) => (Name, Color) = (name, Color.FromUint(color));
+
         public Color Color;
 
         public override string ToString() => Name;
@@ -35,7 +37,23 @@ namespace ColorBlindAccessibleUI
             new CustomColor("Magenta", Colors.Magenta),
             new CustomColor("Red", Colors.Red),
             new CustomColor("White", Colors.White),
-            new CustomColor("Yellow", Colors.Yellow)
+            new CustomColor("Yellow", Colors.Yellow),
+            // hardcoded notification colors
+            new CustomColor("Spanish Grey", 10066329U),
+            new CustomColor("UFO Green", 2284902U),
+            new CustomColor("Turquoise", 3407803U),
+            new CustomColor("Vivid Red-Tangelo", 14509602U),
+            new CustomColor("Deep Saffron", 16750899U),
+            new CustomColor("Amethyst", 10053324U),
+            new CustomColor("Shocking Pink", 15623935U),
+            new CustomColor("Medium Orchid", 11163101U),
+            new CustomColor("Gray (X11)", 12303291U),
+            new CustomColor("Brass", 12298820U),
+            new CustomColor("Telemagenta", 13382502U),
+            new CustomColor("Electric Blue", 6745855U),
+            new CustomColor("Carolina Blue", 5614301U),
+            new CustomColor("Blue-Gray", 6724044U),
+            new CustomColor("Deep Magenta", 13369548U)
         };
 
         public static void AddColor(string name, string hexCode)

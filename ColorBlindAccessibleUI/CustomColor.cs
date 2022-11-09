@@ -39,21 +39,21 @@ namespace ColorBlindAccessibleUI
             new CustomColor("White", Colors.White),
             new CustomColor("Yellow", Colors.Yellow),
             // hardcoded notification colors
-            new CustomColor("Spanish Grey", 10066329U),
-            new CustomColor("UFO Green", 2284902U),
-            new CustomColor("Turquoise", 3407803U),
-            new CustomColor("Vivid Red-Tangelo", 14509602U),
-            new CustomColor("Deep Saffron", 16750899U),
-            new CustomColor("Amethyst", 10053324U),
-            new CustomColor("Shocking Pink", 15623935U),
-            new CustomColor("Medium Orchid", 11163101U),
-            new CustomColor("Gray (X11)", 12303291U),
-            new CustomColor("Brass", 12298820U),
-            new CustomColor("Telemagenta", 13382502U),
-            new CustomColor("Electric Blue", 6745855U),
-            new CustomColor("Carolina Blue", 5614301U),
-            new CustomColor("Blue-Gray", 6724044U),
-            new CustomColor("Deep Magenta", 13369548U)
+            new CustomColor("Spanish Grey", 4288256409),
+            new CustomColor("UFO Green", 4280474982),
+            new CustomColor("Turquoise", 4281597883),
+            new CustomColor("Vivid Red-Tangelo", 4292699682),
+            new CustomColor("Deep Saffron", 4294940979),
+            new CustomColor("Amethyst", 4288243404),
+            new CustomColor("Shocking Pink", 4293814015),
+            new CustomColor("Medium Orchid", 4289353181),
+            new CustomColor("Gray (X11)", 4290493371),
+            new CustomColor("Brass", 4290488900),
+            new CustomColor("Telemagenta", 4291572582),
+            new CustomColor("Electric Blue", 4284935935),
+            new CustomColor("Carolina Blue", 4283804381),
+            new CustomColor("Blue-Gray", 4284914124),
+            new CustomColor("Deep Magenta", 4291559628)
         };
 
         public static void AddColor(string name, string hexCode)

@@ -1,4 +1,4 @@
-﻿COLOR BLIND ACCESSIBLE UI - version 1.3.0
+﻿COLOR BLIND ACCESSIBLE UI - version 1.3.1
 Built on Bannerlord 1.0.1 Main Release
 
 This mod provides configurable color options for a variety of UI elements.

@@ -15,12 +15,12 @@ namespace ColorBlindAccessibleUI
         public static Brush TradePriceBrush { get; set; }
         private static readonly string ConfigurationFilePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "customColors.json");
 
-        public static void UpdateColors()
+        public static void UpdateColors(MCMSettings instance)
         {
-            PartyNameplateVM.PositiveIndicator = Color.Lerp(GlobalSettings<MCMSettings>.Instance.FriendlyPartyColor.SelectedValue.Color, Color.White, (float)0.2).ToString();
-            PartyNameplateVM.PositiveArmyIndicator = Color.Lerp(GlobalSettings<MCMSettings>.Instance.FriendlyPartyColor.SelectedValue.Color, Color.White, (float)0.4).ToString();
-            PartyNameplateVM.NegativeIndicator = Color.Lerp(GlobalSettings<MCMSettings>.Instance.EnemyPartyColor.SelectedValue.Color, Color.White, (float)0.2).ToString();
-            PartyNameplateVM.NegativeArmyIndicator = Color.Lerp(GlobalSettings<MCMSettings>.Instance.EnemyPartyColor.SelectedValue.Color, Color.White, (float)0.4).ToString();
+            PartyNameplateVM.PositiveIndicator = Color.Lerp(instance.FriendlyPartyColor.SelectedValue.Color, Color.White, (float)0.2).ToString();
+            PartyNameplateVM.PositiveArmyIndicator = Color.Lerp(instance.FriendlyPartyColor.SelectedValue.Color, Color.White, (float)0.4).ToString();
+            PartyNameplateVM.NegativeIndicator = Color.Lerp(instance.EnemyPartyColor.SelectedValue.Color, Color.White, (float)0.2).ToString();
+            PartyNameplateVM.NegativeArmyIndicator = Color.Lerp(instance.EnemyPartyColor.SelectedValue.Color, Color.White, (float)0.4).ToString();
         }
         protected override void OnSubModuleLoad()
         {

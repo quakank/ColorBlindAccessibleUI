@@ -150,7 +150,7 @@ namespace ColorBlindAccessibleUI
         public override void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             base.OnPropertyChanged(propertyName);
-            ColorBlindAccessibleUI.UpdateColors();
+            ColorBlindAccessibleUI.UpdateColors(this);
         }
     }
 }

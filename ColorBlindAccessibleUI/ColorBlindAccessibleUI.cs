@@ -13,6 +13,8 @@ namespace ColorBlindAccessibleUI
     public class ColorBlindAccessibleUI : MBSubModuleBase
     {
         public static Brush TradePriceBrush { get; set; }
+        public static Brush FormationIconBrush { get; set; }
+
         private static readonly string ConfigurationFilePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "customColors.json");
 
         public static void UpdateColors(MCMSettings instance)
@@ -41,6 +43,8 @@ namespace ColorBlindAccessibleUI
 
         protected void LoadCustomColors()
         {
+            CustomColor.AddColor("Screamin Green", "#42F456CC");
+            CustomColor.AddColor("Coral Red", "#f44141CC");
             bool configExists = File.Exists(ColorBlindAccessibleUI.ConfigurationFilePath);
             if (configExists)
             {

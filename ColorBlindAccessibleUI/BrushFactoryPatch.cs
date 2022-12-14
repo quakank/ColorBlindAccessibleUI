@@ -61,6 +61,40 @@ namespace ColorBlindAccessibleUI
                 }
                 __result = ColorBlindAccessibleUI.TradePriceBrush;
             }
+
+            if (__result !=null && __result.Name == "FormationMarker.TeamType")
+            {
+                if (ColorBlindAccessibleUI.FormationIconBrush == null)
+                {
+                    foreach(var style in __result.Styles)
+                    {
+                        foreach(var layer in __result.Layers)
+                        {
+                            switch (layer.Name)
+                            {
+                                case "Ally":
+                                    layer.Color = GlobalSettings<MCMSettings>.Instance.AllyIcons.SelectedValue.Color;
+                                    break;
+                                case "Player":
+                                    layer.Color = GlobalSettings<MCMSettings>.Instance.PlayerIcons.SelectedValue.Color;
+                                    break;
+                                case "Enemy":
+                                    layer.Color = GlobalSettings<MCMSettings>.Instance.EnemyIcons.SelectedValue.Color;
+                                    break;
+                                default:
+                                    break;
+
+                            }
+                        }
+                    }
+
+                    var cloneBrush = new Brush();
+                    cloneBrush.FillFrom(__result);
+                    ColorBlindAccessibleUI.FormationIconBrush = cloneBrush;
+                }
+
+                __result = ColorBlindAccessibleUI.FormationIconBrush;
+            }
         }
     }
 }

@@ -147,6 +147,19 @@ namespace ColorBlindAccessibleUI
         public Dropdown<CustomColor> NoneNotification { get; set; } = new Dropdown<CustomColor>(CustomColor.ColorList, 23);
         #endregion
 
+        #region Scene Formation Icons
+        [SettingPropertyDropdown("Ally Formation Icons", Order = 1, RequireRestart = false, HintText = "Color of ally formation popup icons in battle when pressing ALT")]
+        [SettingPropertyGroup("Battle Formation Icons")]
+        public Dropdown<CustomColor> AllyIcons { get; set; } = new Dropdown<CustomColor>(CustomColor.ColorList, 24);
+
+        [SettingPropertyDropdown("Player Formation Icons", Order = 1, RequireRestart = false, HintText = "Color of player formation popup icons in battle when pressing ALT")]
+        [SettingPropertyGroup("Battle Formation Icons")]
+        public Dropdown<CustomColor> PlayerIcons { get; set; } = new Dropdown<CustomColor>(CustomColor.ColorList, 11);
+
+        [SettingPropertyDropdown("Enemy Formation Icons", Order = 1, RequireRestart = false, HintText = "Color of enemy formation popup icons in battle when pressing ALT")]
+        [SettingPropertyGroup("Battle Formation Icons")]
+        public Dropdown<CustomColor> EnemyIcons { get; set; } = new Dropdown<CustomColor>(CustomColor.ColorList, 25);
+        #endregion
         public override void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             base.OnPropertyChanged(propertyName);

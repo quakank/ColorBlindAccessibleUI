@@ -73,13 +73,19 @@ namespace ColorBlindAccessibleUI
                             switch (layer.Name)
                             {
                                 case "Ally":
-                                    layer.Color = GlobalSettings<MCMSettings>.Instance.AllyIcons.SelectedValue.Color;
+                                    var allyColor = GlobalSettings<MCMSettings>.Instance.AllyIcons.SelectedValue.Color;
+                                    allyColor.Alpha = 0.8000001F;
+                                    layer.Color = allyColor;
                                     break;
                                 case "Player":
-                                    layer.Color = GlobalSettings<MCMSettings>.Instance.PlayerIcons.SelectedValue.Color;
+                                    var playerColor = GlobalSettings<MCMSettings>.Instance.PlayerIcons.SelectedValue.Color;
+                                    playerColor.Alpha = 0.8000001F;
+                                    layer.Color = playerColor;
                                     break;
                                 case "Enemy":
-                                    layer.Color = GlobalSettings<MCMSettings>.Instance.EnemyIcons.SelectedValue.Color;
+                                    var enemyColor = GlobalSettings<MCMSettings>.Instance.EnemyIcons.SelectedValue.Color;
+                                    enemyColor.Alpha = 0.8000001F;
+                                    layer.Color = enemyColor;
                                     break;
                                 default:
                                     break;

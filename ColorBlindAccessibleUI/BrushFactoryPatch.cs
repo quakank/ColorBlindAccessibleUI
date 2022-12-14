@@ -61,6 +61,46 @@ namespace ColorBlindAccessibleUI
                 }
                 __result = ColorBlindAccessibleUI.TradePriceBrush;
             }
+
+            if (__result !=null && __result.Name == "FormationMarker.TeamType")
+            {
+                if (ColorBlindAccessibleUI.FormationIconBrush == null)
+                {
+                    foreach(var style in __result.Styles)
+                    {
+                        foreach(var layer in __result.Layers)
+                        {
+                            switch (layer.Name)
+                            {
+                                case "Ally":
+                                    var allyColor = GlobalSettings<MCMSettings>.Instance.AllyIcons.SelectedValue.Color;
+                                    allyColor.Alpha = 0.8000001F;
+                                    layer.Color = allyColor;
+                                    break;
+                                case "Player":
+                                    var playerColor = GlobalSettings<MCMSettings>.Instance.PlayerIcons.SelectedValue.Color;
+                                    playerColor.Alpha = 0.8000001F;
+                                    layer.Color = playerColor;
+                                    break;
+                                case "Enemy":
+                                    var enemyColor = GlobalSettings<MCMSettings>.Instance.EnemyIcons.SelectedValue.Color;
+                                    enemyColor.Alpha = 0.8000001F;
+                                    layer.Color = enemyColor;
+                                    break;
+                                default:
+                                    break;
+
+                            }
+                        }
+                    }
+
+                    var cloneBrush = new Brush();
+                    cloneBrush.FillFrom(__result);
+                    ColorBlindAccessibleUI.FormationIconBrush = cloneBrush;
+                }
+
+                __result = ColorBlindAccessibleUI.FormationIconBrush;
+            }
         }
     }
 }

@@ -13,6 +13,8 @@ namespace ColorBlindAccessibleUI
     public class ColorBlindAccessibleUI : MBSubModuleBase
     {
         public static Brush TradePriceBrush { get; set; }
+        public static Brush FormationIconBrush { get; set; }
+
         private static readonly string ConfigurationFilePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "customColors.json");
 
         public static void UpdateColors(MCMSettings instance)

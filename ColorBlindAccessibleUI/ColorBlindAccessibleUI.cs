@@ -43,8 +43,6 @@ namespace ColorBlindAccessibleUI
 
         protected void LoadCustomColors()
         {
-            CustomColor.AddColor("Screamin Green", "#42F456CC");
-            CustomColor.AddColor("Coral Red", "#f44141CC");
             bool configExists = File.Exists(ColorBlindAccessibleUI.ConfigurationFilePath);
             if (configExists)
             {

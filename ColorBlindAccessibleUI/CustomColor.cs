@@ -23,6 +23,8 @@ namespace ColorBlindAccessibleUI
 
         public CustomColor(string name, uint color) => (Name, Color) = (name, Color.FromUint(color));
 
+        public CustomColor(string name, string hexCode) => (Name, Color) = (name, Color.ConvertStringToColor(hexCode));
+
         public Color Color;
 
         public override string ToString() => Name;
@@ -53,7 +55,9 @@ namespace ColorBlindAccessibleUI
             new CustomColor("Electric Blue", 4284935935),
             new CustomColor("Carolina Blue", 4283804381),
             new CustomColor("Blue-Gray", 4284914124),
-            new CustomColor("Deep Magenta", 4291559628)
+            new CustomColor("Deep Magenta", 4291559628),
+            new CustomColor("Screamin Green", "#42F456FF"),
+            new CustomColor("Coral Red", "#f44141FF")
         };
 
         public static void AddColor(string name, string hexCode)

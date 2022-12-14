@@ -125,6 +125,7 @@
     </Reference>
     <Reference Include="TaleWorlds.TwoDimension">
       <HintPath>G:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.TwoDimension.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <!-- Files & Classes -->

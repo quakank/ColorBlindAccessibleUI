@@ -4,7 +4,7 @@ A Mount & Blade: Bannerlord Mod for providing configurable color options to aid 
 
 ## Features
 - Mod Configuration Menu support for configuring colors in game
-- 28 built in color options (And counting!)
+- 28 built in color options (Color names generated via [Color-Name.com](https://www.color-name.com/)
 - Custom color definition
 - Configurable UI Elements:
   - Casualty logs (Ally/Enemy kills)

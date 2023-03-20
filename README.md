@@ -1,4 +1,5 @@
-# Color Blind Accessible UI
+![Color Blind Accessible UI Title](cbauiTitle.png)
+#
 
 A Mount & Blade: Bannerlord Mod for providing configurable color options to aid those with color vision deficiencies. With a wide range of built in color options and the ability define and select your own custom color, Color Blind Accessible UI strives to provide support for all CVD needs.
 
